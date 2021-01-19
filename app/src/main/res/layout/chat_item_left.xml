@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:focusableInTouchMode="true"
+         android:orientation="horizontal"
+         android:layout_marginLeft="10dp"
+
+         >
+             <com.mikhaellopez.circularimageview.CircularImageView
+                 android:visibility="gone"
+                 android:id="@+id/imageText"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_gravity="center_vertical"
+                 android:src="@drawable/icon_male"
+                 />
+             <LinearLayout
+                 android:id="@+id/layout_text"
+                 android:visibility="visible"
+                 android:layout_marginRight="100dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="10dp"
+                 android:background="@drawable/bg_text_chat_left"
+                 android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/tv_text_message"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="14sp"
+                         android:textColor="#F3000000"
+                         android:text="this is text message"/>
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/tv_seen"
+                     android:visibility="gone"
+                     android:layout_below="@id/tv_msg_date"/>
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:visibility="gone"
+                     android:layout_gravity="end">
+                     <ImageView
+                         android:id="@+id/btn_delivered"
+                         android:layout_width="11dp"
+                         android:layout_height="11dp"
+                         android:layout_gravity="end"
+                         android:tint="@color/online"
+                         android:src="@drawable/ic_baseline_check_24"/>
+                     <ImageView
+                         android:id="@+id/btn_seen"
+                         android:layout_width="11dp"
+                         android:layout_height="11dp"
+                         android:layout_gravity="end"
+                         android:tint="@color/online"
+                         android:src="@drawable/ic_baseline_check_24"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ln_msg_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_msg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28sep 20 09.54PM"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:visibility="visible"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/layout_image"
+            android:visibility="gone"
+            android:focusableInTouchMode="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            >
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:visibility="gone"
+                    android:id="@+id/imageImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_male"
+                    tools:ignore="DuplicateIds" />
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+
+                    android:orientation="vertical">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="5dp"
+                            android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/image_chat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/icon_male"/>
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+
+        >
+        <LinearLayout
+
+            android:id="@+id/ln_image_seen"
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_image_date"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28sep 20 09.54PM"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            >
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:visibility="gone"
+                    android:id="@+id/imageRecord"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_male"
+                    tools:ignore="DuplicateIds" />
+                <LinearLayout
+                    android:id="@+id/layout_voice"
+                    android:layout_width="200dp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:visibility="visible"
+                    android:background="@drawable/bg_layout_round"
+                    android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="-3dp"
+                            android:layout_height="wrap_content">
+
+                                <ImageButton
+                                    android:id="@+id/btn_play_chat"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:tint="@color/colorPrimary"
+                                    android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                    android:clickable="false"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:visibility="visible"
+                                    />
+
+                        </RelativeLayout>
+                        <View
+                            android:id="@+id/v_length"
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="15dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#0091EA" />
+                        <Chronometer
+                            android:id="@+id/tv_duration"
+                            android:visibility="gone"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="center"
+                            android:text="01:00"
+                            android:textColor="#0091EA" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+
+        >
+        <LinearLayout
+            android:id="@+id/ln_audio_seen"
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_audio_date"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28sep 20 09.54PM"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_text"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:gravity="start"
+                android:background="@drawable/bg_text_chat_left"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:text="This is text message"/>
+                    <TextView
+                        android:id="@+id/tv_msg_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28sep 20 09.54PM"
+                        android:layout_marginStart="50dp"
+                        android:textSize="12sp"
+
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_image"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="100dp"
+                android:visibility="visible"
+                android:gravity="end"
+                android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/image_chat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/icon_male"/>
+                    </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_voice"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@drawable/bg_layout_round"
+                android:backgroundTint="@android:color/white"
+                android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="-3dp"
+                        android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/btn_play_chat"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_baseline_play_circle_filled_24"
+                                android:clickable="false"
+                                android:tint="@color/colorPrimary"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:visibility="visible"
+                                />
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/v_length"
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="15dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/black" />
+                    <Chronometer
+                        android:id="@+id/tv_duration"
+                        android:visibility="gone"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="01:00"
+                        android:textColor="@android:color/black" />
+
+            </LinearLayout>
+    </LinearLayout>-->
+

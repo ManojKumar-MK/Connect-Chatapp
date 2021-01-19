@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="developermk.chatapp.view.activities.starup.WelcomeScreenActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:src="@drawable/splash_pattern"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="connect with friends!"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:paddingBottom="50dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Having a mobile app gives you an opportunity to improve relationship circle with friends."/>
+
+        <Button
+
+
+            android:id="@+id/btn_agree"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect"
+            android:focusable="auto"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+
+            android:textColor="#000000"
+            android:text="Let's COnnect"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
